@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* Rich note description: titles, paragraphs, lists (note cards + improve preview) */
+.noteBody h2,
+.note-card-description h2 {
+  margin-top: 0.6em;
+  margin-bottom: 0.25em;
+  font-size: 1.05em;
+  font-weight: 700;
+}
+.noteBody h2:first-child,
+.note-card-description h2:first-child {
+  margin-top: 0;
+}
+.noteBody h3,
+.note-card-description h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-size: 1em;
+  font-weight: 600;
+}
+.noteBody p,
+.note-card-description p {
+  margin: 0.2em 0;
+  line-height: 1.45;
+}
+.noteBody ul,
+.note-card-description ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 0.25em 0;
+}
+.noteBody ol,
+.note-card-description ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin: 0.25em 0;
+}
+.noteBody a,
+.note-card-description a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.improve-preview.noteBody {
+  max-height: 8rem;
+  overflow: auto;
+}
+
